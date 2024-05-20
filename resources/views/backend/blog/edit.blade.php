@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="dashboard-breadcrumb mb-30">
-    <h2>Portfolio</h2>
+    <h2>Blog</h2>
 </div>
 <div class="row g-4">
     <div class="col-xxl-6 col-md-4 m-auto">
         <div class="panel">
             <div class="panel-header">
-                <h5>Edit Portfolio</h5>
+                <h5>Edit Blog</h5>
             </div>
             <div class="panel-body">
                 <form action="{{ route('blog.update', $blogs->id) }}" method="POST" enctype="multipart/form-data">
@@ -16,13 +16,13 @@
                 @method('PUT')
                 <input type="hidden" name="id" value="{{ $blogs->id }}">
                     <div class="row g-3">
-                        
+
                         <div class="col-12">
                             <label class="form-label">Title</label>
                             <input type="text" name="title" class="form-control form-control-sm" value="{{ $blogs->title }}">
-                            
+
                         </div>
-                            
+
                         <div class="col-12">
                             <div class="upload-category-thumbnail">
                                 <label class="form-label" id="addCatThumb">Image</label>
@@ -57,7 +57,7 @@
                                 </label>
                             </div>
                         </div>
-                        
+
                         <div class="col-12">
                             <label class="form-label">Description</label>
                             <textarea rows="7" id="summernote" name="description" class="form-control form-control-sm">{!! $blogs->description !!}</textarea>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 @endsection
 
@@ -115,7 +115,7 @@
             }
         }
     });
-    
+
     // Handle tag removal
     $('#selected-tags').on('click', '.remove-tag', function(e) {
         e.preventDefault();

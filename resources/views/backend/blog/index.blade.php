@@ -49,7 +49,7 @@
                                 <strong class="text-danger">{{ $message }}</strong>
                             @enderror
                         </div>
-                        
+
                         <div class="col-12 d-flex justify-content-end">
                             <div class="btn-box">
                                 <button type="submit" class="btn btn-sm btn-primary">Save</button>
@@ -76,7 +76,7 @@
                 <div class="table-filter-option">
                     <div class="row justify-content-between g-3">
                         <div class="col-xxl-4 col-6 col-xs-12">
-                            
+
                         </div>
                         <div class="col-xl-2 col-3 col-xs-12 d-flex justify-content-end">
                             <div id="productTableLength"></div>
